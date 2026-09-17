@@ -14,7 +14,7 @@ To write a JAVA program To determine the minimum value (e.g., lowest heartbeat),
     Stop the program.
 
 # Program:
-
+```java
 /*
 Program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
 # Developed by: KANDUKURI GOUTHAM
@@ -42,7 +42,7 @@ public class Main {
         System.out.println(getMin(arr, 0, n));
     }
 }
-
+```
 ## Output:
 image
 ## Result:
@@ -65,7 +65,7 @@ To write a Java program to Count how many times a number appears in an array rec
     Stop the program.
 
 # Program:
-
+```java
 /*
 Program Count how many times a number appears in an array recursively.
 # Developed by: KANDUKURI GOUTHAM
@@ -100,7 +100,7 @@ public class CountOccurrences {
         scanner.close();
     }
 }
-
+```
 # Output:
 image
 # Result:
@@ -123,7 +123,7 @@ To write a program to count the number of digits in an integer
     Stop the program.
 
 # Program:
-
+```java
 /*
 Program to to count the number of digits in an integer
 # Developed by: KANDUKURI GOUTHAM
@@ -144,7 +144,7 @@ public class CountDigits {
         System.out.println("Number of digits: " + count);
     }
 }
-
+```
 # Output:
 image
 # Result:
@@ -165,7 +165,7 @@ To write a java function to evaluate weather the given Matrix A has all odd numb
     For each element position (i, j): Compute C[i][j] = A[i][j] + B[i][j].
 
 # Program:
-
+```java
 /*
 Program to ind the nature of resultant matrrix.
 Developed by: KANDUKURI GOUTHAM
@@ -203,7 +203,7 @@ class prog{
     }
     }
 }
-
+```
 # Output:
 image
 # Result:
@@ -227,7 +227,7 @@ To write a Java program to Count the number of inversions in an array where inve
     Display the total number of inversions found in the array and stop the program.
 
 # Program:
-
+```java
 /*
 Program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 # Developed by: KANDUKURI GOUTHAM
@@ -282,7 +282,7 @@ public class CountInversions {
         System.out.println(mergeSortAndCount(arr, 0, n - 1));
     }
 }
-
+```
 # Output:
 image
 # Result:

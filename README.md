@@ -1,9 +1,9 @@
-EX 1 You’re creating a health monitoring device which stores several sensor readings in an array. To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
-DATE:17-09-2026
-AIM:
+## EX 1 You’re creating a health monitoring device which stores several sensor readings in an array. To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
+# DATE:17-09-2026
+## AIM:
 
 To write a JAVA program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
-Algorithm
+## Algorithm
 
     Start the program.
     Read the number of elements and store them in an array.
@@ -13,12 +13,12 @@ Algorithm
     Display the minimum value.
     Stop the program.
 
-Program:
+# Program:
 
 /*
 Program To determine the minimum value (e.g., lowest heartbeat), implement a recursive method.
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+# Developed by: KANDUKURI GOUTHAM
+# RegisterNumber: 212223110019
 */
 
 import java.util.*;
@@ -43,18 +43,18 @@ public class Main {
     }
 }
 
-Output:
+## Output:
 image
-Result:
+## Result:
 
 Thus the JAVA program to find the minimum value (e.g., lowest heartbeat), implement a recursive method has implemented successfully.
 
-Ex2 Count how many times a number appears in an array recursively.
-DATE:17-09-2026
-AIM:
+## Ex2 Count how many times a number appears in an array recursively.
+# DATE:17-09-2026
+# AIM:
 
 To write a Java program to Count how many times a number appears in an array recursively.
-Algorithm
+# Algorithm
 
     Start the program.
     Read the number of elements and store them in an array.
@@ -64,12 +64,12 @@ Algorithm
     Display the result.
     Stop the program.
 
-Program:
+# Program:
 
 /*
 Program Count how many times a number appears in an array recursively.
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+# Developed by: KANDUKURI GOUTHAM
+# RegisterNumber: 212223110019
 */
 
 import java.util.Scanner;
@@ -101,18 +101,18 @@ public class CountOccurrences {
     }
 }
 
-Output:
+# Output:
 image
-Result:
+# Result:
 
 Thus, the Java program to Count how many times a number appears in an array recursively is implemented successfully.
 
-EX3 Write a program to count the number of digits in an integer.
-DATE:17-09-2026
-AIM:
+# EX3 Write a program to count the number of digits in an integer.
+# DATE:17-09-2026
+# AIM:
 
 To write a program to count the number of digits in an integer
-Algorithm
+# Algorithm
 
     Start the program.
     Declare an integer variable n and count = 0.
@@ -122,12 +122,12 @@ Algorithm
     Display the value of count.
     Stop the program.
 
-Program:
+# Program:
 
 /*
 Program to to count the number of digits in an integer
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+# Developed by: KANDUKURI GOUTHAM
+# RegisterNumber: 212223110019
 */
 
 import java.util.Scanner;
@@ -145,18 +145,18 @@ public class CountDigits {
     }
 }
 
-Output:
+# Output:
 image
-Result:
+# Result:
 
 Thus, the Java program to to count the number of digits in an integer is implemented successfully.
 
-Ex4 You are given a Java program that performs matrix addition. If Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension, what will be the nature (even/odd/mixed) of the resulting matrix?
-DATE:17-09-2026
-AIM:
+# Ex4 You are given a Java program that performs matrix addition. If Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension, what will be the nature (even/odd/mixed) of the resulting matrix?
+# DATE:17-09-2026
+# AIM:
 
 To write a java function to evaluate weather the given Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension and find the nature of resultant matrrix.
-Algorithm
+# Algorithm
 
     Start the program.
     Declare two 2D arrays, A and B, of the same size.
@@ -164,7 +164,7 @@ Algorithm
     Create another 2D array C to store the sum of corresponding elements of A and B.
     For each element position (i, j): Compute C[i][j] = A[i][j] + B[i][j].
 
-Program:
+# Program:
 
 /*
 Program to ind the nature of resultant matrrix.
@@ -204,19 +204,19 @@ class prog{
     }
 }
 
-Output:
+# Output:
 image
-Result:
+# Result:
 
 Thus, the java program to evaluate weather the given Matrix A has all odd numbers and Matrix B has all even numbers of the same dimension and find the nature of resultant matrrix is implemented successfully.
 
-Ex5
+# Ex5
 Count Inversions in an Array
-DATE: 17-09-2026
-AIM:
+# DATE: 17-09-2026
+# AIM:
 
 To write a Java program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
-Algorithm
+# Algorithm
 
     Start the program.
     Declare an array arr[] and a variable count = 0 to store the number of inversions.
@@ -226,12 +226,12 @@ Algorithm
     Continue until all pairs are checked.
     Display the total number of inversions found in the array and stop the program.
 
-Program:
+# Program:
 
 /*
 Program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+# Developed by: KANDUKURI GOUTHAM
+# RegisterNumber: 212223110019
 */
 
 import java.util.Scanner;
@@ -283,8 +283,8 @@ public class CountInversions {
     }
 }
 
-Output:
+# Output:
 image
-Result:
+# Result:
 
 Thus the Java program to to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j is implemented successfully.

@@ -1,7 +1,8 @@
-# EX3 Write a program to count the number of digits in an integer.
-## DATE:17-09-2026
+# Ex3
+## Write a program to count the number of digits in an integer.
+## DATE: 22-09-2026
 ## AIM:
-To write a program to count the number of digits in an integer
+To write a Java program to count the number of digits in an integer.
 
 ## Algorithm
 1. Start the program.
@@ -10,14 +11,14 @@ To write a program to count the number of digits in an integer
 4. If n is 0, then the count of digits is 1.
 5. Otherwise, Repeat the steps while n is not equal to 0. Divide n by 10. Increment count by 1.
 6. Display the value of count.
-7. Stop the program. 
+7. Stop the program.
 
 ## Program:
-```
+```java
 /*
 Program to to count the number of digits in an integer
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+Developed by: Kandukuri Goutham
+Register Number: 212223110019
 */
 
 import java.util.Scanner;
@@ -25,19 +26,28 @@ import java.util.Scanner;
 public class CountDigits {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n=sc.nextInt();
-        String a=String.valueOf(n);
-        int count=0;
-        for(int i=0;i<a.length();i++){
-            count++;
+        int num, count = 0;
+
+        System.out.print("Enter an integer: ");
+        num = sc.nextInt();
+
+        if (num == 0) {
+            count = 1;
+        } else {
+            while (num != 0) {
+                num = num / 10;
+                count++;
+            }
         }
+
         System.out.println("Number of digits: " + count);
+        sc.close();
     }
 }
 ```
 
 ## Output:
-<img width="619" height="238" alt="image" src="https://github.com/user-attachments/assets/2578b19a-e8d1-4ce8-83c7-5c6f3065d81b" />
+<img width="543" height="180" alt="image" src="https://github.com/user-attachments/assets/2e4cd75f-cb9c-461e-a79c-e7dec98ff288" />
 
 
 

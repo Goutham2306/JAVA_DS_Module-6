@@ -1,6 +1,6 @@
 # Ex5 
 ## Count Inversions in an Array
-## DATE: 17-09-2026
+## DATE: 22-09-2026
 ## AIM:
 To write a Java program  to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
 
@@ -17,8 +17,8 @@ To write a Java program  to Count the number of inversions in an array where inv
 ```java
 /*
 Program to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j
-Developed by: KANDUKURI GOUTHAM
-RegisterNumber: 212223110019
+Developed by: Kandukuri Goutham
+Register Number: 212223110019
 */
 
 import java.util.Scanner;
@@ -49,33 +49,3 @@ public class CountInversions {
                 arr[k++] = leftArr[i++];
             } else {
                 arr[k++] = rightArr[j++];
-                swaps += (leftArr.length - i); // Count inversions
-                
-            }
-       
-        }
-
-        while (i < leftArr.length) arr[k++] = leftArr[i++];
-        while (j < rightArr.length) arr[k++] = rightArr[j++];
-
-        return swaps;
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
-        System.out.println(mergeSortAndCount(arr, 0, n - 1));
-    }
-}
-
-```
-
-## Output:
-<img width="357" height="240" alt="image" src="https://github.com/user-attachments/assets/2fd053aa-21d5-439b-8af8-78fb80123460" />
-
-
-
-## Result:
-Thus the Java program to to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j is implemented successfully.

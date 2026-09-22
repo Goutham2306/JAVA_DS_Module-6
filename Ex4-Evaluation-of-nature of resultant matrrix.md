@@ -19,39 +19,61 @@ Developed by: Kandukuri Goutham
 Register Number: 212223110019
 */
 
-import java.util.*;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-    
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int[][] row=new int[a][b];
-        int[][] col=new int[a][b];
-        int[][] res=new int[a][b];
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                row[i][j]=sc.nextInt();
-            }
+import java.util.Scanner;
+
+public class CountInversions {
+    public static int mergeSortAndCount(int[] arr, int left, int right) {
+        int count = 0;
+        if (left < right) {
+            int mid = (left + right) / 2;
+            count += mergeSortAndCount(arr, left, mid);
+            count += mergeSortAndCount(arr, mid + 1, right);
+            count += mergeAndCount(arr, left, mid, right);
         }
-    
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                col[i][j]=sc.nextInt();
+        return count;
+    }
+
+    private static int mergeAndCount(int[] arr, int left, int mid, int right) {
+        int[] leftArr = new int[mid - left + 1];
+        int[] rightArr = new int[right - mid];
+
+        for (int i = 0; i < leftArr.length; i++) leftArr[i] = arr[left + i];
+        for (int i = 0; i < rightArr.length; i++) rightArr[i] = arr[mid + 1 + i];
+
+        int i = 0, j = 0, k = left, swaps = 0;
+
+        while (i < leftArr.length && j < rightArr.length) {
+            if (leftArr[i] <= rightArr[j]) {
+                arr[k++] = leftArr[i++];
+            } else {
+                arr[k++] = rightArr[j++];
+                swaps += (leftArr.length - i); // Count inversions
+                
             }
+       
         }
-    
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                res[i][j]=row[i][j]+col[i][j];
-            }
-        }
-    
-        for(int i=0;i<a;i++){
-            for(int j=0;j<b;j++){
-                System.out.print(res[i][j]);
-                if(j<b-1){
-                    System.out.print(" ");
-                }
-            
-            }
+
+        while (i < leftArr.length) arr[k++] = leftArr[i++];
+        while (j < rightArr.length) arr[k++] = rightArr[j++];
+
+        return swaps;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) arr[i] = sc.nextInt();
+        System.out.println(mergeSortAndCount(arr, 0, n - 1));
+    }
+}
+
+```
+
+## Output:
+<img width="357" height="240" alt="image" src="https://github.com/user-attachments/assets/2fd053aa-21d5-439b-8af8-78fb80123460" />
+
+
+
+## Result:
+Thus the Java program to to Count the number of inversions in an array where inversion is defined as: arr[i] > arr[j] and i < j is implemented successfully.
